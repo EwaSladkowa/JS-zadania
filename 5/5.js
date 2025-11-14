@@ -1,4 +1,5 @@
-function doMeow(){
+doMeow = document.getElementById('doMeow');
+doMeow.addEventListener("click", () =>{
     var znaki = document.getElementById('kot').value;
     const gifkot = document.getElementById('gifkot');
     const meowkot = document.getElementById('meowkot');
@@ -11,4 +12,4 @@ function doMeow(){
         meowkot.textContent = 'Za mało znaków lub wyraz nie koczy się napisem "kot"';
         gifkot.style.display = 'none';
     }
-}
+});

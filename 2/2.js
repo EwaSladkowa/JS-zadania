@@ -1,4 +1,7 @@
-function sprawdz(){
+Sprawdz = document.getElementById('Sprawdz');
+Sprawdz.addEventListener("click", () =>
+
+{
     const Wynik = Math.floor(Math.random() * 100) + 1;
     const wynikK = document.getElementById('wynik');
     wynikK.textContent = `Prawdopodobieństwo, że się spełni: ${Wynik}%`
@@ -11,4 +14,4 @@ function sprawdz(){
     else {
         wynikK.className = 'green';
     }
-}
+});

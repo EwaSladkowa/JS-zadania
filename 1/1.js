@@ -8,7 +8,8 @@ function poleTrojkata(a, b, c){
         return null;
     }
 }
-function oblicz() {
+oblicz = document.getElementById('oblicz');
+oblicz.addEventListener("click", () => {
     const a = parseFloat(document.getElementById('a').value);
     const b = parseFloat(document.getElementById('b').value);
     const c = parseFloat(document.getElementById('c').value);
@@ -22,4 +23,4 @@ function oblicz() {
     else {
         wynikK.textContent = 'Z podanych boków nie sposób utworzyć trójkąta'
     }
-}
+});

@@ -1,4 +1,5 @@
-function zamien(){
+zamien = document.getElementById('zamien');
+zamien.addEventListener("click", () =>{
     const mord = document.getElementById('mord').value;
     const fustang = document.getElementById('fustang').value;
 
@@ -10,4 +11,4 @@ function zamien(){
     else{
         document.getElementById('wynik').textContent = 'Proszę wprowadzić oba wyrazy';
     }
-}
+});
